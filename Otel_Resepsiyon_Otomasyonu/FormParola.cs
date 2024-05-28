@@ -100,7 +100,7 @@ namespace Otel_Resepsiyon_Otomasyonu
         {
             FormMainMenu geridon = new FormMainMenu();
             geridon.Show();
-            this.Hide();
+            this.Close();
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)

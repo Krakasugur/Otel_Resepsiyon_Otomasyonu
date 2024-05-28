@@ -110,9 +110,7 @@ namespace Otel_Resepsiyon_Otomasyonu
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
-            Formgiris geridon = new Formgiris();
-            geridon.Show();
-            this.Hide();
+            this.Close();
         }
     }
 }

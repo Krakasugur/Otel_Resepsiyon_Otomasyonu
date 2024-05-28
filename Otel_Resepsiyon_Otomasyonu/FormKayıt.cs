@@ -32,7 +32,7 @@ namespace Otel_Resepsiyon_Otomasyonu
         {
             if (string.IsNullOrEmpty(TxtAd.Text) || string.IsNullOrEmpty(TxtSoyad.Text))
             {
-                MessageBox.Show("Lütfen Ad ve Soyadı girdikten sonra Oda Numarasını seçin.");
+                MessageBox.Show("Tüm alanları girdikten sonra Oda Numarasını seçin.");
                 return;
             }
 
@@ -41,6 +41,8 @@ namespace Otel_Resepsiyon_Otomasyonu
             SqlCommand com = new SqlCommand("insert into oda1 (Adi,Soyadi) values (@Ad, @Soyad)", connect);
             com.Parameters.AddWithValue("@Ad", TxtAd.Text);
             com.Parameters.AddWithValue("@Soyad", TxtSoyad.Text);
+
+
             com.ExecuteNonQuery();
             connect.Close();
 
@@ -424,7 +426,7 @@ namespace Otel_Resepsiyon_Otomasyonu
         {
             FormMainMenu geridon = new FormMainMenu();
             geridon.Show();
-            this.Hide();
+            this.Close();
         }
 
         private void odabuton23_Click(object sender, EventArgs e)

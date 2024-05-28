@@ -251,7 +251,7 @@
             // 
             this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox3.Image = global::Otel_Resepsiyon_Otomasyonu.Properties.Resources.go_back_2_512;
-            this.pictureBox3.Location = new System.Drawing.Point(-6, 3);
+            this.pictureBox3.Location = new System.Drawing.Point(-6, 5);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(76, 41);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
